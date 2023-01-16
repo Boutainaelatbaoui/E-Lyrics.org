@@ -5,7 +5,7 @@
     include("include/head.php");
     ?>
 <body>
-    <section class="vh-100">
+    <section class="h-100">
             <div class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col">
@@ -43,7 +43,7 @@
                                             <a href="registration.php" class="text-decoration-none text-white text-center">Register here</a></button></p>
                                     </div>
                                 </div>
-                                <div class="col">
+                                <div class="col d-none d-lg-block">
                                     <img src="assets/image/lyrics-3.jpg" class="img-fluid img-form" id="img" alt="Music" min-height="200px">
                                 </div>
                             </div>

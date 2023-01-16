@@ -78,3 +78,18 @@ section{
     font-family: 'Poppins', sans-serif;
     color: #1d3557;
 }
+
+@media (max-width: 600px){
+    .container{
+        background-color: #1d3557;
+        width: 80% !important;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+    
+    .logo-point{
+        font-size: 37px;
+    }
+}

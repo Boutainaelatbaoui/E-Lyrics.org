@@ -11,7 +11,7 @@
                     <div class="col">
                         <div class="card-form mb-3 m-auto">
                             <div class="row">
-                                <div class="col">
+                                <div class="col d-none d-lg-block">
                                     <img src="assets/image/lyrics-2.jpg" class="img-fluid img-form" id="img" alt="Music" min-height="200px">
                                 </div>
                                 <div class="col second-card">
