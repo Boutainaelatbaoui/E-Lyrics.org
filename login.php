@@ -5,6 +5,52 @@
     include("include/head.php");
     ?>
 <body>
-    
+    <section class="vh-100">
+            <div class="container py-5 h-100">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col">
+                        <div class="card-form mb-3 m-auto">
+                            <div class="row">
+                                <div class="col second-card">
+                                    <div class="mx-5">
+                                    <div class="d-flex justify-content-center align-items-center mt-3 mb-4">
+                                            <span class="logo">
+                                                E-Lyrics<span class="logo-point">...</span>
+                                            </span>
+                                    </div>
+                                    <div class="text-center mb-5">
+                                        <div>
+                                            <h4 class="login-text">Hey, Hello <span>&#128075;</span></h4>
+                                        </div>
+                                        <div>
+                                            <h5 class="login-detail">Please Enter Your Details</h5>
+                                        </div>
+                                    </div>
+                                    <form class="card-form">
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email address</label>
+                                            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="password" class="form-label">Password</label>
+                                            <input type="password" name="password" class="form-control" id="password">
+                                        </div>
+                                        <div class="d-grid d-block mb-4">
+                                            <button type="submit" name="login" class="btn main-btn text-white">Sign in</button>
+                                        </div>
+                                    </form>
+                                    <p class="mb-3 text-center text-form fs-6">Don't have an account? <button class="btn second-btn btn-sm">
+                                            <a href="registration.php" class="text-decoration-none text-white text-center">Register here</a></button></p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <img src="assets/image/lyrics-3.jpg" class="img-fluid img-form" id="img" alt="Music" min-height="200px">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 </body>
 </html>
