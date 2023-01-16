@@ -5,7 +5,7 @@
     include("include/head.php");
     ?>
 <body>
-    <section class="h-100">
+    <section class="vh-100">
             <div class="container py-5 h-100">
                 <div class="row d-flex justify-content-center align-items-center h-100">
                     <div class="col">
@@ -39,7 +39,7 @@
                                             <button type="submit" name="login" class="btn main-btn text-white">Sign in</button>
                                         </div>
                                     </form>
-                                    <p class="mb-3 text-center text-form fs-6">Don't have an account? <button class="btn second-btn btn-sm">
+                                    <p class="mb-3 text-center text-form fs-6 mb-5">Don't have an account? <button class="btn second-btn btn-sm">
                                             <a href="registration.php" class="text-decoration-none text-white text-center">Register here</a></button></p>
                                     </div>
                                 </div>
