@@ -82,7 +82,7 @@ section{
 @media (max-width: 600px){
     .container{
         background-color: #1d3557;
-        width: 80% !important;
+        width: 90% !important;
     }
 
     .logo {

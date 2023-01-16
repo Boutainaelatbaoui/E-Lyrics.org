@@ -42,7 +42,7 @@
                                             <button type="submit" name="sign" class="btn main-btn text-white">Create account</button>
                                         </div>
                                     </form>
-                                    <p class="mb-3 text-center text-form">Already have an account? <button class="btn second-btn btn-sm">
+                                    <p class="mb-3 text-center text-form mb-3">Already have an account? <button class="btn second-btn btn-sm">
                                             <a href="login.php" class="text-decoration-none text-white text-center">Login</a></button></p>
                                     </div>
                                 </div>

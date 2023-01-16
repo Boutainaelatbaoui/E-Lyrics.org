@@ -39,8 +39,8 @@
                                             <button type="submit" name="login" class="btn main-btn text-white">Sign in</button>
                                         </div>
                                     </form>
-                                    <p class="mb-3 text-center text-form fs-6 mb-5">Don't have an account? <button class="btn second-btn btn-sm">
-                                            <a href="registration.php" class="text-decoration-none text-white text-center">Register here</a></button></p>
+                                    <p class="mb-3 text-center text-form fs-6 mb-3">Don't have an account? <button class="btn second-btn btn-sm">
+                                            <a href="registration.php" class="text-decoration-none text-white text-center">Sign Up</a></button></p>
                                     </div>
                                 </div>
                                 <div class="col d-none d-lg-block">
