@@ -148,7 +148,7 @@ section{
     --topNavbarHeight: 95px !important;
 }
 .sidebar-nav {
-    --bs-offcanvas-width: 230px !important;
+    --bs-offcanvas-width: 220px !important;
     top: var(--topNavbarHeight) !important;
     background-color: #1d3557 !important;
     font-weight: bold !important;
