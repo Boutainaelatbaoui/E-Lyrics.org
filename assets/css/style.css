@@ -144,9 +144,15 @@ section{
     color: #edf2f4 !important;
 }
 
+:root {
+    --topNavbarHeight: 95px !important;
+}
 .sidebar-nav {
-    --bs-offcanvas-width: 270px !important;
+    --bs-offcanvas-width: 230px !important;
+    top: var(--topNavbarHeight) !important;
     background-color: #1d3557 !important;
+    font-weight: bold !important;
+    border-bottom-right-radius: 60px !important;
 }
 .sidebar-text {
     font-size: 16px !important;
@@ -161,13 +167,8 @@ main {
     margin: 110px 10px 0 20px;
 }
 
-:root {
-    --topNavbarHeight: 90px !important;
-}
-
-.sidebar-nav {
-    --bs-offcanvas-width: 250px !important;
-    top: var(--topNavbarHeight) !important;
+.modal-backdrop{
+    display: none !important;
 }
 
 @media (min-width: 992px) {
