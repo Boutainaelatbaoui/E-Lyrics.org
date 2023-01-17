@@ -37,10 +37,10 @@
 						
 					</div>
 					<div class="modal-footer">
-						<a href="#" class="btn btn-secondary" data-bs-dismiss="modal" id="product-cancel-btn">Cancel</a>
-						<button type="submit" name="delete" class="btn btn-danger product-action-btn" id="product-delete-btn">Delete</a>
-						<button type="submit" name="update" class="btn btn-warning product-action-btn" id="product-update-btn">Update</a>
-						<button type="submit" name="save" class="btn btn-primary product-action-btn" id="product-save-btn">Save</button>
+						<a href="#" class="btn btn-secondary" data-bs-dismiss="modal" id="song-cancel-btn">Cancel</a>
+						<button type="submit" name="delete" class="btn btn-danger song-action-btn" id="song-delete-btn">Delete</a>
+						<button type="submit" name="update" class="btn btn-warning song-action-btn" id="song-update-btn">Update</a>
+						<button type="submit" name="save" class="btn btn-primary song-action-btn" id="song-save-btn">Save</button>
 					</div>
 				</form>
 			</div>

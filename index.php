@@ -27,7 +27,7 @@
                 <div class="card-text mb-4">
                     <h4 class="mt-1 fw-bolder">Welcome back <i class="bi bi-quote"></i>Boutaina El Atbaoui<i class="bi bi-quote"></i> <span>&#128075;</span></h4>
                 </div>
-                <a href="#modal-song" data-bs-toggle="modal" class="btn btn-modal">Add New Song</a>
+                <a href="#modal-song" data-bs-toggle="modal" class="btn btn-modal" onclick="addSong()">Add New Song</a>
             </div>
         </div>
         <!-- TASK MODAL -->
@@ -35,5 +35,10 @@
             include("include/model.php");
         ?>
     </main> 
+    <!-- ================== BEGIN core-js ================== -->
+    <?php
+        include("include/scripts.php");
+    ?>
+	<!-- ================== END core-js ================== -->
 </body>
 </html>
