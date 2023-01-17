@@ -30,7 +30,10 @@
                 <a href="#modal-song" data-bs-toggle="modal" class="btn btn-modal">Add New Song</a>
             </div>
         </div>
-    </main>
-    
+        <!-- TASK MODAL -->
+        <?php
+            include("include/model.php");
+        ?>
+    </main> 
 </body>
 </html>

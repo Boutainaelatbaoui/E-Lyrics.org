@@ -209,6 +209,10 @@ main {
     font-weight: bolder !important;
 }
 
+.modal-title{
+    color: #1d3557 !important;
+}
+
 @media (min-width: 992px) {
     .sidebar-nav {
         transform: none !important;
