@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Frijole&family=Merienda+One&family=Mochiy+Pop+One&family=Niconne&family=Pacifico&family=Poppins&family=Shrikhand&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Poppins', sans-serif !important;
 }
@@ -102,6 +108,7 @@ section{
 .navbar{
     background-color: #1d3557 !important;
     border-bottom-right-radius: 70px !important;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 .logo-dash {
@@ -135,4 +142,48 @@ section{
 
 .navbar-toggler{
     color: #edf2f4 !important;
+}
+
+.sidebar-nav {
+    --bs-offcanvas-width: 270px !important;
+    background-color: #1d3557 !important;
+}
+.sidebar-text {
+    font-size: 16px !important;
+}
+.offcanvas-backdrop.show {
+    display: none !important;
+}
+.close-offcanvas {
+    display: block;
+}
+main {
+    margin: 110px 10px 0 20px;
+}
+
+:root {
+    --topNavbarHeight: 90px !important;
+}
+
+.sidebar-nav {
+    --bs-offcanvas-width: 250px !important;
+    top: var(--topNavbarHeight) !important;
+}
+
+@media (min-width: 992px) {
+    .sidebar-nav {
+        transform: none !important;
+        visibility: visible !important;
+        border-bottom-right-radius: 60px !important;
+        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+        top: var(--topNavbarHeight) !important;
+        height: calc(100% - var(--topNavbarHeight)) !important;
+    }
+    .close-offcanvas {
+        display: none;
+    }
+
+    main {
+        margin-left: 280px;
+    }
 }
