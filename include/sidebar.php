@@ -13,11 +13,17 @@
                     </a>
                 </li>
                 <li>
+                    <a href="statistics.php" class="nav-link active mt-2 me-5">
+                        <span class="me-4"><i class="bi bi-bar-chart-line-fill"></i></span>
+                        <span>Statistics</span>
+                    </a>
+                </li>
+                <!-- <li>
                     <a href="songs.php" class="nav-link active mt-2 me-5">
                         <span class="me-4"><i class="bi bi-file-music-fill fs-5"></i></span>
                         <span>Songs</span>
                     </a>
-                </li>
+                </li> -->
             </ul>
         </nav>
         <div class="position-absolute bottom-0">
