@@ -34,6 +34,34 @@
         <?php
             include("include/model.php");
         ?>
+
+        <table id="data-table" class="display dataTable" style="width: 100%" aria-describedby="example_info">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Album</th>
+                    <th>Time</th>
+                    <th>Lyrics</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr class="odd">
+                        <td class="sorting_1"></td>
+                        <td class=""></td>
+                        <td class=""></td>
+                        <td class=""></td>
+                        <td class=""></td>
+                        <td>
+                            <div class="d-flex fs-3">
+                                <a href="#modal-city" data-bs-toggle="modal" class="btn btn-warning me-3" onclick="editSong()"><i class="bi bi-pencil-square users-icon"></i></a>
+                                <a href="" class="btn btn-danger text-dark"><i class="bi bi-trash3-fill users-icon"></i></a>
+                            </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
     </main> 
     <!-- ================== BEGIN core-js ================== -->
     <?php

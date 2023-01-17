@@ -213,6 +213,30 @@ main {
     color: #1d3557 !important;
 }
 
+#data-table_wrapper{
+    margin-top: 50px !important;
+    font-family: 'Poppins', sans-serif;
+    color: #1d3557 !important;
+    font-weight: bolder !important;
+}
+
+.dataTables_wrapper .dataTables_filter input{
+    border-radius: 10px !important;
+}
+
+.dataTables_scrollHeadInner{
+    margin-top: 20px;
+}
+
+thead{
+    background-color: #1d3557;
+    color: #edf2f4 !important;
+}
+
+table{
+    border-radius: 65px !important;
+}
+
 @media (min-width: 992px) {
     .sidebar-nav {
         transform: none !important;
