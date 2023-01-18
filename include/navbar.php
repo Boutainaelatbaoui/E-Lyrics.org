@@ -1,3 +1,9 @@
+<?php
+        session_start();
+        if(!isset($_SESSION['name'])){
+            header('location: login.php');
+        }
+?>
 <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
             <!-- offcanvas trigger -->

@@ -32,10 +32,11 @@
                                     <input type="number" class="form-control" name="year" id="song-year"/>
                                 </div>
                             </div>
-							<div class="mb-0">
+							<div class="mb-3">
 								<label class="form-label">Lyrics</label>
 								<textarea class="form-control" rows="8" name="lyrics" id="song-lyrics"></textarea>
 							</div>
+							<button class="btn song-action-btn" id="song-more-btn"><i class="bi bi-plus"></i> Add more</a>
 						
 					</div>
 					<div class="modal-footer">

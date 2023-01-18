@@ -265,3 +265,9 @@ div.card.card-statis i{
         margin-left: 240px;
     }
 }
+
+#song-more-btn{
+    background-color: #1d3557 !important;
+    color: #edf2f4 !important;
+    border-radius: 10px !important;
+}

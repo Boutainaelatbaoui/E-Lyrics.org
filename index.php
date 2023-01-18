@@ -3,10 +3,6 @@
 <?php
     $title = "Dashboard | E-Lyrics";
     include("include/head.php");
-    session_start();
-    if(!isset($_SESSION['name'])){
-        header('location: login.php');
-    }
 ?>
 <body class="dash-body">
     <!-- BEGIN navbar -->
