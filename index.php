@@ -55,8 +55,8 @@
                         <td class=""></td>
                         <td>
                             <div class="d-flex fs-3">
-                                <a href="#modal-city" data-bs-toggle="modal" class="btn btn-warning me-3" onclick="editSong()"><i class="bi bi-pencil-square users-icon"></i></a>
-                                <a href="" class="btn btn-danger text-dark"><i class="bi bi-trash3-fill users-icon"></i></a>
+                                <a href="#modal-song" data-bs-toggle="modal" class="btn btn-warning me-3" onclick="editSong()"><i class="bi bi-pencil-square users-icon text-white"></i></a>
+                                <a href="" class="btn btn-danger text-dark"><i class="bi bi-trash3 users-icon text-white"></i></a>
                             </div>
                         </td>
                     </tr>
