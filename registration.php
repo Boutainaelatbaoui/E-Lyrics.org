@@ -3,7 +3,8 @@
 <?php
     $title = "Sign Up | E-Lyrics";
     include("include/head.php");
-    ?>
+    include('code/admin.php');
+?>
 <body>
     <section class="vh-100">
             <div class="container py-5 h-100">
@@ -21,7 +22,26 @@
                                                 E-Lyrics<span class="logo-point">...</span>
                                             </span>
                                     </div>
-                                    <form class="card-form">
+                                    <?php if (isset($_SESSION['message'])): ?>
+                                        <div class="alert alert-info alert-dismissible fade show" role="alert">
+                                        <strong>Success!</strong>
+                                            <?php 
+                                                echo $_SESSION['message']; 
+                                                unset($_SESSION['message']);
+                                            ?>
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>
+                                        <?php elseif (isset($_SESSION['message1'])): ?>
+                                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <strong>warning!</strong>
+                                            <?php 
+                                                echo $_SESSION['message1']; 
+                                                unset($_SESSION['message1']);
+                                            ?>
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>
+                                    <?php endif ?>
+                                    <form class="card-form" action="./code/admincontroller.php" method="POST">
                                         <div class="mb-3">
                                             <label for="user-name" class="form-label">Name</label>
                                             <input type="text" name="username" class="form-control" id="user-name">
@@ -36,10 +56,10 @@
                                         </div>
                                         <div class="mb-4">
                                             <label for="confirm-password" class="form-label">Repeat your password</label>
-                                            <input type="password" name="confirm-password" class="form-control" id="confirm-password">
+                                            <input type="password" name="confirm" class="form-control" id="confirm-password">
                                         </div>
                                         <div class="d-grid d-block mb-4 text-center">
-                                            <button type="submit" name="sign" class="btn main-btn text-white">Create account</button>
+                                            <button type="submit" name="signup" class="btn main-btn text-white">Create account</button>
                                         </div>
                                     </form>
                                     <p class="mb-3 text-center text-form mb-3">Already have an account? <button class="btn second-btn btn-sm">
