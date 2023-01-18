@@ -237,6 +237,16 @@ table{
     border-radius: 65px !important;
 }
 
+div.card.card-statis{
+    border-radius: 30px;
+    font-weight: bolder !important;
+    color: #1d3557 !important;
+}
+
+div.card.card-statis i{
+    color: #e9a92d !important;
+}
+
 @media (min-width: 992px) {
     .sidebar-nav {
         transform: none !important;
