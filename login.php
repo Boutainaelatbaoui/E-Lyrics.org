@@ -3,7 +3,8 @@
 <?php
     $title = "Login | E-Lyrics";
     include("include/head.php");
-    ?>
+    include('code/admin.php');
+?>
 <body>
     <section class="vh-100">
             <div class="container py-5 h-100">
@@ -26,7 +27,26 @@
                                             <h5 class="login-detail">Please Enter Your Details</h5>
                                         </div>
                                     </div>
-                                    <form class="card-form">
+                                    <?php if (isset($_SESSION['message'])): ?>
+                                        <div class="alert alert-info alert-dismissible fade show" role="alert">
+                                        <strong>Success!</strong>
+                                            <?php 
+                                                echo $_SESSION['message']; 
+                                                unset($_SESSION['message']);
+                                            ?>
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>
+                                        <?php elseif (isset($_SESSION['message1'])): ?>
+                                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        <strong>warning!</strong>
+                                            <?php 
+                                                echo $_SESSION['message1']; 
+                                                unset($_SESSION['message1']);
+                                            ?>
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                        </div>
+                                    <?php endif ?>
+                                    <form class="card-form" action="./code/admincontroller.php" method="POST">
                                         <div class="mb-3">
                                             <label for="email" class="form-label">Email address</label>
                                             <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">

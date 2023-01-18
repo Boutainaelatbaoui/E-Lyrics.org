@@ -28,7 +28,14 @@ class Admin extends Connection
         $stmt->execute([$this->email]);
         $result = $stmt->fetch();
 
-        if ($result['id'] == '') {
+        //Form validation
+        if (empty($this->username) || empty($this->email) || empty($this->password) || empty($this->confirm)) {
+            $_SESSION['message1'] = "Please fill all required fields!!";
+            header('location: ../registration.php');
+        } elseif (!password_verify($this->confirm, $this->password)) {
+            $_SESSION['message1'] = "Password and Confirm password should match!!";
+            header('location: ../registration.php');
+        } elseif ($result['id'] == '') {
             $ins = "INSERT INTO `admins` (`name`, `email`, `password`) VALUES(?,?,?)";
             $stmt = $this->connect()->prepare($ins);
             $stmt->execute([$this->username, $this->email, $this->password]);
@@ -39,5 +46,28 @@ class Admin extends Connection
             header('location:../registration.php');
         }
     }
-}
 
+    public function login()
+    {
+        $sql = "SELECT * FROM admins WHERE email = ?";
+        $stmt = $this->connect()->prepare($sql);
+        $stmt->execute([$this->email]);
+        $result = $stmt->fetch();
+        // var_dump($this);
+        // die;
+
+        if ($result["email"] != "") {
+            if (!password_verify($this->password, $result["password"])) {
+                $_SESSION['message1'] = "Incorrect Password!!";
+                header('location: ../login.php');
+            }
+            else {
+                $_SESSION['name'] = $result['name'];
+                header('location:../index.php');
+            }
+        } else {
+            $_SESSION['message1'] = "Incorrect Email!!";
+            header('location: ../login.php');
+        }
+    }
+}
