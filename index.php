@@ -3,7 +3,8 @@
 <?php
     $title = "Dashboard | E-Lyrics";
     include("include/head.php");
-    ?>
+    session_start();
+?>
 <body class="dash-body">
     <!-- BEGIN navbar -->
     <?php
@@ -25,7 +26,7 @@
                     </span>
                 </div>
                 <div class="card-text mb-4">
-                    <h4 class="mt-1 fw-bolder">Welcome back <i class="bi bi-quote"></i>Boutaina El Atbaoui<i class="bi bi-quote"></i> <span>&#128075;</span></h4>
+                    <h4 class="mt-1 fw-bolder">Welcome back <i class="bi bi-quote"></i><?php echo $_SESSION['name']; ?><i class="bi bi-quote"></i> <span>&#128075;</span></h4>
                 </div>
                 <a href="#modal-song" data-bs-toggle="modal" class="btn btn-modal" onclick="addSong()">Add New Song</a>
             </div>

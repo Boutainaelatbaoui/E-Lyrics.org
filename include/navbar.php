@@ -50,6 +50,7 @@
                     <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle text-white fw-bold ms-0 ms-lg-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="bi bi-person-circle fs-2 fw-bolder me-1"></i>
+                                <?php echo $_SESSION['name']; ?>
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li><a class="dropdown-item" href="#">Edit Profile</a></li>
