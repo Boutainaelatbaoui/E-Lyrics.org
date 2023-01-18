@@ -16,3 +16,7 @@ if (isset($_POST['login'])) {
     $admin->password = $password;
     $admin->login();
 }
+if (isset($_POST['logout'])) {
+    $admin = new Admin();
+    $admin->logoutAdmin();
+}

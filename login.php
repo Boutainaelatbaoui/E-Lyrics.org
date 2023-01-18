@@ -3,7 +3,10 @@
 <?php
     $title = "Login | E-Lyrics";
     include("include/head.php");
-    include('code/admin.php');
+    include('code/admin.php'); 
+    if(isset($_SESSION['name'])){
+        header('location: index.php');
+    }
 ?>
 <body>
     <section class="vh-100">

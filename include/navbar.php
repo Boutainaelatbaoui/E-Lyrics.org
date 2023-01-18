@@ -56,7 +56,7 @@
                                 <li><a class="dropdown-item" href="#">Edit Profile</a></li>
                                 <li><a class="dropdown-item" href="#">Settings</a></li>
                                 <li><hr class="dropdown-divider"></li>
-                                <form action="" method="POST">
+                                <form action="./code/admincontroller.php" method="POST">
                                     <li><button class="dropdown-item" type="submit" name="logout">Log Out</button></li>
                                 </form>
                             </ul>

@@ -70,4 +70,9 @@ class Admin extends Connection
             header('location: ../login.php');
         }
     }
+
+    public function logoutAdmin(){  
+        session_destroy();
+        header("Location: ../login.php");
+    }
 }
