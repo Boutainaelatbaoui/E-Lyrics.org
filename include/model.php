@@ -22,10 +22,7 @@
                             <div class="row mb-3">
                                 <div class="col-md-6 col-sm-12">
                                     <label class="form-label">Artist</label>
-                                    <select class="form-select" name="artist" id="song-artist">
-                                        <option value="">Please select</option>
-                                        <option value="1">Piano</option>
-                                    </select>
+                                    <input type="text" class="form-select" name="artist" id="song-artist"/>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
                                     <label class="form-label">Year</label>
@@ -36,8 +33,12 @@
 								<label class="form-label">Lyrics</label>
 								<textarea class="form-control" rows="8" name="lyrics" id="song-lyrics"></textarea>
 							</div>
-							<button class="btn song-action-btn" id="song-more-btn"><i class="bi bi-plus"></i> Add more</a>
-						
+							<div class="mb-3">
+								<a href="#" class="btn song-action-btn" id="song-more-btn" onclick="addMore()"><i class="bi bi-plus"></i> Add more</a>
+							</div>
+							<div class="more-modal">
+
+							</div>						
 					</div>
 					<div class="modal-footer">
 						<a href="#" class="btn btn-secondary" data-bs-dismiss="modal" id="song-cancel-btn">Cancel</a>
