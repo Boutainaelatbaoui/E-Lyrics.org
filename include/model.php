@@ -8,7 +8,7 @@
 					</div>
 					<div class="modal-body">
 							<!-- This Input Allows Storing Task Index  -->
-							<input  type="text" name="song-id" id="song-id">
+							<input  type="hidden" name="id" id="song-id">
                             <div class="row mb-3">
                                 <div class="col-md-6 col-sm-12">
 									<label class="form-label">Title</label>
@@ -42,7 +42,6 @@
 					</div>
 					<div class="modal-footer">
 						<a href="#" class="btn btn-secondary" data-bs-dismiss="modal" id="song-cancel-btn">Cancel</a>
-						<button type="submit" name="delete" class="btn btn-danger song-action-btn" id="song-delete-btn">Delete</a>
 						<button type="submit" name="update" class="btn btn-warning song-action-btn" id="song-update-btn">Update</a>
 						<button type="submit" name="save" class="btn btn-primary song-action-btn" id="song-save-btn">Save</button>
 					</div>

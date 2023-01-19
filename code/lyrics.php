@@ -51,6 +51,15 @@
             $stmt->execute([$this->id]);
         }
 
+        public function updateSong()
+        {
+            for($i=0; $i<count($this->title); $i++){
+                $sql = "UPDATE `songs` SET `title`=?, `album`=?, `year`=?, `lyrics`=?, `artist`=? WHERE id = ?";
+                $stmt = $this->connect()->prepare($sql);
+                $stmt->execute([$this->title[$i], $this->album[$i], $this->year[$i], $this->lyrics[$i], $this->artist[$i], $this->id]);
+            }
+        }
+
     }
 
 

@@ -3,7 +3,6 @@ let more_modal = document.querySelector('.more-modal');
 function addSong(){
     document.getElementById('song-save-btn').style.display   = "block";
     document.getElementById('song-update-btn').style.display = "none";
-    document.getElementById('song-delete-btn').style.display = "none";
 
     document.getElementById('form-song').reset();
 }
@@ -12,7 +11,6 @@ function editSong(id){
     document.getElementById('song-save-btn').style.display   = "none";
     document.getElementById('song-more-btn').style.display   = "none";
     document.getElementById('song-update-btn').style.display = "block";
-    document.getElementById('song-delete-btn').style.display = "block";
 
     document.getElementById("song-id").value = id;
     document.getElementById('song-title').value = document.getElementById(id).getAttribute("title");

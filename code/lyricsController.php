@@ -20,3 +20,20 @@
         $song->deleteSong();
         header('location:../index.php');
     }
+
+    if (isset($_POST['update'])) {
+        // extract($_POST);
+        // var_dump($_POST);
+        // die();
+        $id     = $_POST["id"];
+        $title  = $_POST["title"];
+        $year   = $_POST["year"];
+        $lyrics = $_POST["lyrics"];
+        $artist = $_POST["artist"];
+        $album  = $_POST["album"];
+
+        $song = new Lyrics($title, $album, $year, $lyrics, $artist);
+        $song->setId($id);
+        $song->updateSong();
+        header('location:../index.php');
+    }
