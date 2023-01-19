@@ -62,7 +62,7 @@ class Lyrics extends Connection
     public function statisticsCount($col, $table)
     {
 
-        $sql = "SELECT DISTINCT COUNT($col) as count FROM " . $table;
+        $sql = "SELECT COUNT(DISTINCT $col) as count FROM " . $table;
         $stmt = $this->connect()->prepare($sql);
         $stmt->execute();
         $res = $stmt->fetch();
