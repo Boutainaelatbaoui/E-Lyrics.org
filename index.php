@@ -41,7 +41,7 @@
             $songs = $chansons->displaySong();
         ?>
 
-        <table id="data-table" class="display dataTable" style="width: 100%" aria-describedby="example_info">
+        <table id="data-table" class="display dataTable mb-3" style="width: 100%" aria-describedby="example_info">
             <thead>
                 <tr>
                     <th>Title</th>
