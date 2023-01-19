@@ -39,7 +39,7 @@ include("include/head.php");
                         <div><i class="bi bi-person-square fs-2 text-center"></i></div>
                         <div class="text-truncate">
                             <h5 class="card-title">Total Artists</h5>
-                            <p class="card-text fs-5"></p>
+                            <p class="card-text fs-5"><?php echo ($songs->statisticsCount('artist', 'songs')['count']); ?></p>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ include("include/head.php");
                         <div><i class="bi bi-blockquote-right fs-2"></i></div>
                         <div class="text-truncate">
                             <h5 class="card-title">Total Titles</h5>
-                            <p class="card-text fs-5"></p>
+                            <p class="card-text fs-5"><?php echo ($songs->statisticsCount('title', 'songs')['count']); ?></p>
                         </div>
                     </div>
                 </div>
@@ -61,7 +61,7 @@ include("include/head.php");
                         <div><i class="bi bi-disc fs-2"></i></div>
                         <div class="text-truncate">
                             <h5 class="card-title">Total Albums</h5>
-                            <p class="card-text fs-5"></p>
+                            <p class="card-text fs-5"><?php echo ($songs->statisticsCount('album', 'songs')['count']); ?></p>
                         </div>
                     </div>
                 </div>
