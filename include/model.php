@@ -22,7 +22,7 @@
                             <div class="row mb-3">
                                 <div class="col-md-6 col-sm-12">
                                     <label class="form-label">Artist</label>
-                                    <input type="text" class="form-select" name="artist[]" id="song-artist"/>
+                                    <input type="text" class="form-control" name="artist[]" id="song-artist"/>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
                                     <label class="form-label">Year</label>

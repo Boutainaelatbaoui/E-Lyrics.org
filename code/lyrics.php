@@ -19,9 +19,17 @@
             $this->lyrics = $lyrics;
         }
 
+        public function displaySong()
+        {
+            $sql = "SELECT * FROM `songs`";
+            $stmt = $this->connect()->prepare($sql);
+            $stmt->execute();
+            $result = $stmt->fetchAll();
+            return $result;
+        }
+
         public function saveSong()
         {
-                // $sql = "INSERT INTO `songs`(`title`, `album`, `year`, `lyrics`, `artist`) VALUES (?, ?, ?, ?, ?)";
                 for($i=0; $i<count($this->title); $i++){
                     $sql = "INSERT INTO `songs`(`title`, `album`, `year`, `lyrics`, `artist`) VALUES (?, ?, ?, ?, ?)";
                     $stmt = $this->connect()->prepare($sql);

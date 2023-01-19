@@ -8,10 +8,17 @@ function addSong(){
     document.getElementById('form-song').reset();
 }
 
-function editSong(){
+function editSong(id){
     document.getElementById('song-save-btn').style.display   = "none";
     document.getElementById('song-update-btn').style.display = "block";
     document.getElementById('song-delete-btn').style.display = "block";
+
+    document.getElementById("song-id").value = id;
+    document.getElementById('song-title').value = document.getElementById(id).getAttribute("title");
+    document.getElementById('song-album').value = document.getElementById(id).getAttribute("album");
+    document.getElementById('song-artist').value = document.getElementById(id).getAttribute("artist");
+    document.getElementById('song-year').value = document.getElementById(id).getAttribute("year");
+    document.getElementById('song-lyrics').value = document.getElementById(id).getAttribute("lyrics");
 }
 
 function addMore() {

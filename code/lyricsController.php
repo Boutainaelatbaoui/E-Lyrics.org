@@ -8,9 +8,7 @@
         $lyrics = $_POST["lyrics"];
         $artist = $_POST["artist"];
         $album = $_POST["album"];
-
-        $lyricss = new Lyrics($title, $album, $year, $lyrics, $artist);
-
-        $lyricss->saveSong();
+        $lyrics = new Lyrics($title, $album, $year, $lyrics, $artist);
+        $lyrics->saveSong();     
         header('location:../index.php');
     }

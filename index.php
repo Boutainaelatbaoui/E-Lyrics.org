@@ -35,31 +35,44 @@
             include("include/model.php");
         ?>
 
+        <?php
+            include_once 'code/lyrics.php';
+            $chansons = new Lyrics();
+            $songs = $chansons->displaySong();
+        ?>
+
         <table id="data-table" class="display dataTable" style="width: 100%" aria-describedby="example_info">
             <thead>
                 <tr>
                     <th>Title</th>
                     <th>Artist</th>
                     <th>Album</th>
-                    <th>Time</th>
+                    <th>year</th>
                     <th>Lyrics</th>
                     <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
-                    <tr class="odd">
-                        <td class="sorting_1"></td>
-                        <td class=""></td>
-                        <td class=""></td>
-                        <td class=""></td>
-                        <td class=""></td>
+            <?php
+                foreach ($songs as $song) {
+            ?>
+                    <tr class="odd" id = "<?= $song['id'];?>" title = "<?= $song['title'];?>" 
+            artist = "<?= $song['artist'];?>" album = "<?= $song['album'];?>" year = "<?= $song['year']; ?>" lyrics = "<?= $song['lyrics']; ?>">
+                        <td class="sorting_1"><?= $song['title'];?></td>
+                        <td class=""><?= $song['artist'];?></td>
+                        <td class=""><?= $song['album'];?></td>
+                        <td class=""><?= $song['year']; ?></td>
+                        <td class=""><?= $song['lyrics']; ?></td>
                         <td>
                             <div class="d-flex fs-3">
-                                <a href="#modal-song" data-bs-toggle="modal" class="btn btn-warning me-3" onclick="editSong()"><i class="bi bi-pencil-square users-icon text-white"></i></a>
-                                <a href="" class="btn btn-danger text-dark"><i class="bi bi-trash3 users-icon text-white"></i></a>
+                                <a href="#modal-song" data-bs-toggle="modal" class="btn btn-warning me-3" onclick="editSong(<?= $song['id'];?>)"><i class="bi bi-pencil-square users-icon text-white"></i></a>
+                                <a href="code/lyricsController.php?id= $song['id'] ?>" class="btn btn-danger text-dark"><i class="bi bi-trash3 users-icon text-white"></i></a>
                             </div>
                         </td>
                     </tr>
+            <?php
+                }
+            ?>
             </tbody>
         </table>
     </main> 
