@@ -10,6 +10,7 @@ function addSong(){
 
 function editSong(id){
     document.getElementById('song-save-btn').style.display   = "none";
+    document.getElementById('song-more-btn').style.display   = "none";
     document.getElementById('song-update-btn').style.display = "block";
     document.getElementById('song-delete-btn').style.display = "block";
 

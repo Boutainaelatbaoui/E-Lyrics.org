@@ -8,7 +8,7 @@
 					</div>
 					<div class="modal-body">
 							<!-- This Input Allows Storing Task Index  -->
-							<input  type="hidden" name="song-id" id="song-id">
+							<input  type="text" name="song-id" id="song-id">
                             <div class="row mb-3">
                                 <div class="col-md-6 col-sm-12">
 									<label class="form-label">Title</label>

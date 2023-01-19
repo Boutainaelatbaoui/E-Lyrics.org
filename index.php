@@ -66,7 +66,7 @@
                         <td>
                             <div class="d-flex fs-3">
                                 <a href="#modal-song" data-bs-toggle="modal" class="btn btn-warning me-3" onclick="editSong(<?= $song['id'];?>)"><i class="bi bi-pencil-square users-icon text-white"></i></a>
-                                <a href="code/lyricsController.php?id= $song['id'] ?>" class="btn btn-danger text-dark"><i class="bi bi-trash3 users-icon text-white"></i></a>
+                                <a href="code/lyricsController.php?id= <?= $song['id'] ?>" class="btn btn-danger text-dark"><i class="bi bi-trash3 users-icon text-white"></i></a>
                             </div>
                         </td>
                     </tr>

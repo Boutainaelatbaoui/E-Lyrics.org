@@ -19,6 +19,11 @@
             $this->lyrics = $lyrics;
         }
 
+        function setId($id)
+        {
+            $this->id = $id;
+        }
+
         public function displaySong()
         {
             $sql = "SELECT * FROM `songs`";
@@ -36,6 +41,14 @@
                     $stmt->execute([$this->title[$i], $this->album[$i], $this->year[$i], $this->lyrics[$i], $this->artist[$i]]);
                 }
                 
+        }
+
+        
+        public function deleteSong()
+        {
+            $sql = "DELETE FROM songs WHERE id = ?";
+            $stmt = $this->connect()->prepare($sql);
+            $stmt->execute([$this->id]);
         }
 
     }

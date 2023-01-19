@@ -12,3 +12,11 @@
         $lyrics->saveSong();     
         header('location:../index.php');
     }
+
+    if (isset($_GET['id'])) {
+        extract($_GET);
+        $song = new Lyrics();
+        $song->setId($id);
+        $song->deleteSong();
+        header('location:../index.php');
+    }
