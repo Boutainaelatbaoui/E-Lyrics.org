@@ -41,22 +41,24 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                         </div>
                                     <?php endif ?>
-                                    <form class="card-form" action="./code/admincontroller.php" method="POST" novalidate>
+                                    <form class="card-form" action="./code/admincontroller.php" method="POST">
                                         <div class="mb-3">
                                             <label for="user-name" class="form-label">Name</label>
-                                            <input type="text" name="username" class="form-control" id="user-name" required>
+                                            <input type="text" name="username" class="form-control" id="user-name">
+                                            <div id="username-validation"></div>
                                         </div>
                                         <div class="mb-3">
                                             <label for="email" class="form-label">Email address</label>
-                                            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" required>
+                                            <input type="text" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                            <div id="email-validation"></div>
                                         </div>
                                         <div class="mb-3">
                                             <label for="password" class="form-label">Password</label>
-                                            <input type="password" name="password" class="form-control" id="password" required>
+                                            <input type="password" name="password" class="form-control" id="password">
                                         </div>
                                         <div class="mb-4">
                                             <label for="confirm-password" class="form-label">Repeat your password</label>
-                                            <input type="password" name="confirm" class="form-control" id="confirm-password" required>
+                                            <input type="password" name="confirm" class="form-control" id="confirm-password">
                                         </div>
                                         <div class="d-grid d-block mb-4 text-center">
                                             <button type="submit" name="signup" class="btn main-btn text-white">Create account</button>
