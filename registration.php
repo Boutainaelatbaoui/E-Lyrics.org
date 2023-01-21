@@ -45,16 +45,17 @@
                                         <div class="mb-3">
                                             <label for="user-name" class="form-label">Name</label>
                                             <input type="text" name="username" class="form-control" id="user-name">
-                                            <div id="username-validation"></div>
+                                            <div id="username-validation" class="validation"></div>
                                         </div>
                                         <div class="mb-3">
                                             <label for="email" class="form-label">Email address</label>
                                             <input type="text" name="email" class="form-control" id="email" aria-describedby="emailHelp">
-                                            <div id="email-validation"></div>
+                                            <div id="email-validation" class="validation"></div>
                                         </div>
                                         <div class="mb-3">
                                             <label for="password" class="form-label">Password</label>
                                             <input type="password" name="password" class="form-control" id="password">
+                                            <div id="password-validation" class="validation"></div>
                                         </div>
                                         <div class="mb-4">
                                             <label for="confirm-password" class="form-label">Repeat your password</label>

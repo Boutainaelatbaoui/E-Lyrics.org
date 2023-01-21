@@ -271,3 +271,7 @@ div.card.card-statis i{
     color: #edf2f4 !important;
     border-radius: 10px !important;
 }
+
+.validation{
+    color: red !important;
+}
