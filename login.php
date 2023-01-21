@@ -49,7 +49,7 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                                         </div>
                                     <?php endif ?>
-                                    <form class="card-form" action="./code/admincontroller.php" method="POST">
+                                    <form class="card-form" action="./code/admincontroller.php" method="POST" novalidate>
                                         <div class="mb-3">
                                             <label for="email" class="form-label">Email address</label>
                                             <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
@@ -75,5 +75,6 @@
                 </div>
             </div>
         </section>
+        <script src="./assets/js/formValidation.js"></script>
 </body>
 </html>
