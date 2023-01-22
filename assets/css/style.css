@@ -264,6 +264,10 @@ div.card.card-statis i{
     main {
         margin-left: 240px;
     }
+
+    .height-form{
+        height: 100vh !important;
+    }
 }
 
 #song-more-btn{
@@ -274,4 +278,8 @@ div.card.card-statis i{
 
 .validation{
     color: red !important;
+}
+
+.height-form{
+    height: 100% !important;
 }
