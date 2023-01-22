@@ -53,13 +53,15 @@
                                         <div class="mb-3">
                                             <label for="email" class="form-label">Email address</label>
                                             <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                            <div id="email-validation" class="validation"></div>
                                         </div>
                                         <div class="mb-3">
                                             <label for="password" class="form-label">Password</label>
                                             <input type="password" name="password" class="form-control" id="password">
+                                            <div id="password-validation" class="validation"></div>
                                         </div>
                                         <div class="d-grid d-block mb-4">
-                                            <button type="submit" name="login" class="btn main-btn text-white">Sign in</button>
+                                            <button type="submit" name="login" class="btn main-btn text-white" id="login">Sign in</button>
                                         </div>
                                     </form>
                                     <p class="mb-3 text-center text-form fs-6 mb-3">Don't have an account? <button class="btn second-btn btn-sm">
@@ -75,6 +77,6 @@
                 </div>
             </div>
         </section>
-        <script src="./assets/js/formValidation.js"></script>
+        <script src="./assets/js/validationLogin.js"></script>
 </body>
 </html>

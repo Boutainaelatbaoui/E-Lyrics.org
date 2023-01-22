@@ -3,6 +3,7 @@ const username            = document.getElementById('user-name');
 const email               = document.getElementById('email');
 const password            = document.getElementById('password');
 const confirm_password    = document.getElementById('confirm-password');
+const register            = document.getElementById("signup");
 
 
 form.addEventListener("submit", (e) => {
@@ -51,7 +52,6 @@ form.addEventListener("submit", (e) => {
 
 });
 
-let btn = document.getElementById("signup");
 
 const regexEmail = /^[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]{2,}$/;
 const regexPassword = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$/;
@@ -60,12 +60,12 @@ email.addEventListener('input', (x) => {
     if (!regexEmail.test(email.value)) {
         email.classList.add("is-invalid");
         document.getElementById('email-validation').innerText = "the valid format should be like exemple@gmail.com";
-        btn.disabled = true; 
+        register.disabled = true; 
     } else {
         email.classList.remove("is-invalid");
         email.classList.add("is-valid");
         document.getElementById('email-validation').innerText = "";
-        btn.disabled = false;
+        register.disabled = false;
     }
 })
 
@@ -73,11 +73,11 @@ password.addEventListener('input', (x) => {
     if (!regexPassword.test(password.value)) {
         password.classList.add("is-invalid");
         document.getElementById('password-validation').innerText = "the password must contain at least 8 characters(an uppercase letter,a lowercase letter, numbers & special characters)";
-        btn.disabled = true; 
+        register.disabled = true; 
     } else {
         password.classList.remove("is-invalid");
         password.classList.add("is-valid");
         document.getElementById('password-validation').innerText = "";
-        btn.disabled = false;
+        register.disabled = false;
     }
 })
