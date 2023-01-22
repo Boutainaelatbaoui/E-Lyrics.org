@@ -63,7 +63,7 @@
                                             <div id="confpassword-validation" class="validation"></div>
                                         </div>
                                         <div class="d-grid d-block mb-4 text-center">
-                                            <button type="submit" name="signup" class="btn main-btn text-white">Create account</button>
+                                            <button type="submit" name="signup" class="btn main-btn text-white" id="signup">Create account</button>
                                         </div>
                                     </form>
                                     <p class="mb-3 text-center text-form mb-3">Already have an account? <button class="btn second-btn btn-sm">
