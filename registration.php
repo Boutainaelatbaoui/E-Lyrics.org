@@ -45,7 +45,7 @@
                                         <div class="mb-3">
                                             <label for="user-name" class="form-label">Name</label>
                                             <input type="text" name="username" class="form-control" id="user-name">
-                                            <div id="username-validation" class="validation"></div>
+                                            <small class="validation"></small>
                                         </div>
                                         <div class="mb-3">
                                             <label for="email" class="form-label">Email address</label>
