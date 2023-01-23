@@ -56,7 +56,7 @@ include("include/head.php");
                 </div>
             </div>
             <div class="col">
-                <div class="card card-statis">
+                <div class="card card-statis mb-5">
                     <div class="card-body d-flex flex-row justify-content-around align-items-center mt-3 mb-3">
                         <div><i class="bi bi-disc fs-2"></i></div>
                         <div class="text-truncate">

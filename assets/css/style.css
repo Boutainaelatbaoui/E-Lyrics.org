@@ -266,7 +266,7 @@ div.card.card-statis i{
     }
 
     .height-form{
-        height: 100vh !important;
+        height: 100vh;
     }
 }
 
@@ -281,5 +281,5 @@ div.card.card-statis i{
 }
 
 .height-form{
-    height: 100% !important;
+    height: 100%;
 }
