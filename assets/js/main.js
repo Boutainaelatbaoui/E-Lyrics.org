@@ -25,11 +25,11 @@ function editSong(id){
 
 more_button.addEventListener("click", () => {
     var clone = modal_body.cloneNode(true);
-    clone.querySelector('.form-control').value = "";
-    clone.querySelector('.a').value = "";
-    clone.querySelector('.b').value = "";
-    clone.querySelector('.c').value = "";
-    clone.querySelector('.d').value = "";
+    clone.querySelector('.title').value = "";
+    clone.querySelector('.album').value = "";
+    clone.querySelector('.artist').value = "";
+    clone.querySelector('.year').value = "";
+    clone.querySelector('.lyrics').value = "";
 
     more_modal.append(clone);
 })

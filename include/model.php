@@ -12,26 +12,26 @@
                             <div class="row mb-3">
                                 <div class="col-md-6 col-sm-12">
 									<label class="form-label">Title</label>
-									<input type="text" class="form-control" name="title[]" id="song-title" required data-parsley-minlength="3" data-parsley-trigger="keyup"/>
+									<input type="text" class="form-control title" name="title[]" id="song-title" required data-parsley-minlength="3" data-parsley-trigger="keyup"/>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
 									<label class="form-label">Album</label>
-									<input type="text" class="form-control a" name="album[]" id="song-album" required data-parsley-minlength="3" data-parsley-trigger="keyup"/>
+									<input type="text" class="form-control album" name="album[]" id="song-album" required data-parsley-minlength="3" data-parsley-trigger="keyup"/>
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <div class="col-md-6 col-sm-12">
                                     <label class="form-label">Artist</label>
-                                    <input type="text" class="form-control b" name="artist[]" id="song-artist" required data-parsley-minlength="3" data-parsley-trigger="keyup"/>
+                                    <input type="text" class="form-control artist" name="artist[]" id="song-artist" required data-parsley-minlength="3" data-parsley-trigger="keyup"/>
                                 </div>
                                 <div class="col-md-6 col-sm-12">
                                     <label class="form-label">Year</label>
-                                    <input type="number" class="form-control c" name="year[]" id="song-year" required data-parsley-min="1" data-parsley-trigger="keyup"/>
+                                    <input type="number" class="form-control year" name="year[]" id="song-year" required data-parsley-min="1" data-parsley-trigger="keyup"/>
                                 </div>
                             </div>
 							<div class="mb-3">
 								<label class="form-label">Lyrics</label>
-								<textarea class="form-control d" rows="8" name="lyrics[]" id="song-lyrics" required data-parsley-minlength="6" data-parsley-trigger="keyup"></textarea>
+								<textarea class="form-control lyrics" rows="8" name="lyrics[]" id="song-lyrics" required data-parsley-minlength="6" data-parsley-trigger="keyup"></textarea>
 							</div>				
 					</div>
 					<div class="more-modal">
