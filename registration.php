@@ -4,6 +4,9 @@
     $title = "Sign Up | E-Lyrics";
     include("include/head.php");
     include('code/admin.php');
+    if(isset($_SESSION['name'])){
+        header('location: index.php');
+    }
 ?>
 <body>
     <section class="height-form">
