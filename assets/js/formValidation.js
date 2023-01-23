@@ -55,7 +55,7 @@ form.addEventListener("submit", (e) => {
 
 const regexEmail = /^[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]{2,}$/;
 const regexPassword = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$/;
-// Validation avec Regex 
+
 email.addEventListener('input', (x) => {
     if (!regexEmail.test(email.value)) {
         email.classList.add("is-invalid");
