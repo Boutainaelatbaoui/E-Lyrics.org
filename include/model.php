@@ -3,7 +3,7 @@
 			<div class="modal-content">
 				<form action="./code/lyricsController.php" method="POST" id="form-song" data-parsley-validate>
 					<div class="modal-header">
-						<h5 class="modal-title fw-bold">Add New Song</h5>
+						<h5 class="modal-title fw-bold">Add New Lyrics</h5>
 						<a href="#" class="btn-close" data-bs-dismiss="modal"></a>
 					</div>
 					<div class="modal-body">
